@@ -1,4 +1,15 @@
+<script setup>
+import DefaultTheme from 'vitepress/theme'
+
+const { Layout } = DefaultTheme
+</script>
+
 <template>
-  <h1>Custom Layout!</h1>
-  <Content /><!-- make sure to include markdown outlet -->
+  <Layout></Layout>
 </template>
+
+<style>
+article {
+  @apply font-serif;
+}
+</style>

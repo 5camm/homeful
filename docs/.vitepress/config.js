@@ -1,27 +1,26 @@
 const path = require('path')
 
 module.exports = {
-  title: 'Breezy',
+  title: 'Homeful 🏡',
   description:
-    'Vue 3 components based on tailwind inspired by tails',
+    'A journey home',
   alias: {
     '/@breezy/': path.resolve(__dirname, '../../src')
   },
   themeConfig: {
     docsDir: 'docs',
-    repo: 'https://github.com/camwhite/breezy',
     sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Welcome Home',
         link: '/'
       },
       {
-        text: 'Heroes',
-        link: '/heroes/'
+        text: 'Being Nothing',
+        link: '/being-nothing/'
       },
       {
-        text: 'Content',
-        link: '/content/'
+        text: 'Becoming The Black',
+        link: '/becoming-the-black/'
       }
     ]
   }
