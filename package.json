@@ -1,13 +1,13 @@
 {
-  "name": "vue-breezy",
-  "version": "0.1.0-apla.1",
+  "name": "homeful",
+  "version": "0.1.0-aphla.1",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name vue-breezy src/index.js",
+    "lib:build": "vue-cli-service build --target lib --name lib lib/index.js",
     "test:unit": "vue-cli-service test:unit",
-    "docs:build": "vitepress build docs",
-    "docs:dev": "vitepress dev docs"
+    "home:build": "vitepress build home",
+    "home:dev": "vitepress dev home"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/vue-breezy.common.js",
   "dependencies": {
     "core-js": "^3.37.1",
