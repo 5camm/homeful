@@ -78,7 +78,7 @@ import App from './App'
 import './assets/tailwind.css'
 
 createApp(App)
-  .use(Breezy)
+  .use(Lib)
   .mount('#app')
 ```
 
