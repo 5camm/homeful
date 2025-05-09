@@ -1,0 +1,15 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "yarn workspace marketing run dev"
+  },
+  "type": "module",
+  "workspaces": [
+    "marketing/",
+    "app/"
+  ],
+  "license": "UNLICENSED",
+  "repository": "https://github.com/5camm/homeful",
+  "private": true
+}

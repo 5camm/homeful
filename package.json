@@ -1,29 +1,19 @@
 {
   "name": "homeful",
   "version": "0.1.0-aphla.1",
-  "scripts": {
-    "lib:build": "vue-cli-service build --target lib --name lib lib/index.js",
-    "test:unit": "vue-cli-service test:unit",
-    "home:build": "vitepress build home",
-    "home:dev": "vitepress dev home"
-  },
   "license": "UNLICENSED",
-  "main": "dist/vue-breezy.common.js",
-  "dependencies": {
-    "core-js": "^3.42.0",
-    "tailwindcss": "^1.9.5",
-    "vue": "^3.5.13"
+  "scripts": {
+    "dev": "yarn workspace frontend run start",
+    "test": "node tests",
+    "debug": "node debug",
+    "prod": "yarn workspaces lib run build && yarn workspaces frontend run --production build && yarn workspaces backend run --production deploy"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.8",
-    "@vue/cli-plugin-unit-jest": "~5.0.8",
-    "@vue/cli-service": "~5.0.8",
-    "@vue/compiler-sfc": "^3.5.13",
-    "@vue/test-utils": "^2.4.6",
-    "node-sass": "^9.0.0",
-    "sass-loader": "^16.0.5",
-    "typescript": "~5.8.3",
-    "vitepress": "^1.6.3",
-    "vue-jest": "^3.0.7"
-  }
+  "type": "module",
+  "workspaces": [
+    "frontend/",
+    "backend/"
+  ],
+  "repository": "https://github.com/5camm/homeful",
+  "author": "Cam <5cam@proton.me>",
+  "private": true
 }

@@ -1,12 +1,20 @@
 const path = require('path')
 
 module.exports = {
-  title: 'Homeful 🏡',
-  description:
-    'A journey home',
-  alias: {
-    '/@breezy/': path.resolve(__dirname, '../../src')
-  },
+  title: '   🏩 Homeful',
+  description: 'A journey home',
+  // alias: {
+  //   '@/lib/': path.resolve(__dirname, '../../lib')
+  // },
+  // vue: {
+  //   template: {
+  //     compilerOptions: {
+  //       isCustomElement: (tag) => {
+  //           return tag.startsWith('b-') // (return true)
+  //       }
+  //     }
+  //   }
+  // },
   themeConfig: {
     docsDir: 'docs',
     sidebar: [

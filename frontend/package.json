@@ -1,0 +1,11 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd src/ && yarn start"
+  },
+  "type": "module",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/5camm/homeful",
+  "private": true
+}
