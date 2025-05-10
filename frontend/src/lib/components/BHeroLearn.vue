@@ -32,7 +32,7 @@ export default {
   props: {
     background: {
       type: String,
-      default: 'white'
+      default: 'none'
     }
   },
   setup(props) {

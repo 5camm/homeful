@@ -2,10 +2,11 @@
   "name": "src",
   "version": "1.0.0",
   "scripts": {
-    "start": "yarn workspace marketing run dev"
+    "start": "yarn workspace lib run build && yarn workspace marketing add 'file:./../lib' --force && yarn workspace marketing run dev"
   },
   "type": "module",
   "workspaces": [
+    "lib/",
     "marketing/",
     "app/"
   ],

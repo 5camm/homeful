@@ -1,7 +1,6 @@
 <template>
   <div
-    class="min-w-screen min-h-screen px-4 flex items-center justify-center bg-cover relative flex-col"
-    :style="backgroundImage"
+    class="min-w-screen min-h-screen px-4 flex items-center justify-center bg-none bg-cover relative flex-col"
   >
     <div
       class="w-full h-full absolute inset-0 bg-black bg-opacity-75"

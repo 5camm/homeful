@@ -1,13 +1,13 @@
 <template>
   <div
-    class="px-8 mx-auto flex items-center min-h-screen min-w-screen bg-white"
+    class="px-8 mx-auto flex items-center min-h-screen min-w-screen bg-none"
   >
     <div class="w-1/2">
       <div
         class="flex flex-col overflow-hidden shadow-2xl rounded-lg"
       >
         <div
-          class="h-8 bg-gray-900 text-white flex items-center"
+          class="h-8 p-6 bg-gray-900 text-white flex items-center"
         >
           <div
             class="w-3 h-3 rounded-full ml-3 bg-red-400"

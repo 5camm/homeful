@@ -1,7 +1,7 @@
 <template>
   <div
+    class="relative flex flex-col items-center justify-center p-8 min-h-screen bg-cover min-w-screen"
     :class="[backgroundColor]"
-    class="relative flex flex-col items-center justify-center p-8 min-h-screen bg-white bg-cover min-w-screen"
   >
     <div
       class="flex flex-col flex-col-reverse items-center justify-center mx-auto lg:flex-row lg:max-w-4xl lg:p-0"
@@ -34,7 +34,7 @@ export default {
   props: {
     background: {
       type: String,
-      default: 'white'
+      default: 'none'
     }
   },
   setup(props) {
