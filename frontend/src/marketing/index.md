@@ -272,7 +272,7 @@
     </div>
   </template>
 </b-hero-minimal>
-<b-content-course background="purple-600">
+<b-content-course background="purple-900" class="rounded-lg">
   <template #title>
     <p
       class="inline-block px-3 py-1 leading-tight mb-4 text-xs font-semibold tracking-widest text-indigo-700 uppercase rounded-full bg-indigo-200"
@@ -299,7 +299,7 @@
   </template>
   <template #link>
     <a
-      class="text-sm font-semibold text-indigo-600 underline mt-3"
+      class="text-sm font-semibold text-gray-400 underline my-6"
     >
       Lorem ipsum dolor sit amet
     </a>
@@ -307,18 +307,18 @@
   <template #cards>
     <div
       v-for="course of ['','','']"
-      class="flex flex-col justify-center rounded-lg shadow-lg"
+      class="flex flex-col w-2/3 justify-center rounded-lg p-8 sm:p-2 sm:w-1/2 md:w-1/3"
     >
       <div class="flex flex-col items-end bg-gray-900">
         <img
-          class="p-8 w-64 flex-shrink object-contain self-end rounded-full bg-pink-500"
+          class="w-full h-full p-8 w-64 flex-shrink object-cover self-end bg-pink-500"
           src="https://cdn.discordapp.com/emojis/804519063253811290.webp?size=100"
         />
       </div>
       <div class="relative flex flex-col justify-between flex-1 text-white p-3 bg-black">
         <span
           class="absolute -mt-12 inline-flex items-center px-3 py-1 mr-4 text-xs font-medium leading-tight text-gray-800 bg-gray-100 border rounded-full"
-          >Lorem ipsum doler</span
+          >Lorem ipsum dolor</span
         >
         <p
           class="block text-xl font-semibold leading-7"
@@ -327,10 +327,7 @@
         </p>
         <p class="mt-3 text-base leading-6 text-gray-300">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+          sed do eiusmod.</p>
         <p class="mt-3 text-sm font-medium leading-5">
           <span
             class="inline-flex items-center px-3 py-1 text-xs font-medium leading-tight text-blue-800 bg-blue-100 rounded-full"
@@ -347,7 +344,7 @@
         </div>
         <div class="ml-3 p-1">
           <p class="text-sm font-medium leading-5 text-gray-900">
-            <a class="hover:underline">donthedeveloper</a>
+            <a class="hover:underline">don</a>
           </p>
           <div class="text-xs leading-5 text-gray-600">
             <time>6/6/6</time>

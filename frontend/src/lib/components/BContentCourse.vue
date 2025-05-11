@@ -7,7 +7,7 @@
       <slot name="headline"></slot>
       <slot name="link"></slot>
       <div
-        class="grid max-w-lg gap-5 mx-auto mt-12 md:grid-cols-2 lg:grid-cols-3 md:max-w-none"
+        class="flex flex-wrap justify-center w-full "
       >
         <slot name="cards"></slot>
       </div>
