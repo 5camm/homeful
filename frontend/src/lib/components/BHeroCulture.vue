@@ -1,13 +1,13 @@
 <template>
   <div
-    class="min-w-screen rounded-lg"
+    class="min-w-full p-8"
     :class="[backgroundColor]"
   >
     <div
       class="flex flex-row items-center w-full lg:flex-col-reverse lg:text-center"
     >
       <div
-        class="w-1/2 text-white text-2xl font-hairline relative flex flex-col p-12"
+        class="w-1/2 text-white text-2xl font-hairline relative flex flex-col p-8"
       >
         <slot name="headline"></slot>
         <slot name="content"></slot>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div
-        class="w-2/3 mt-6"
+        class="w-2/3 p-4"
       >
         <slot name="media" class="shadow-2xl rounded-lg"></slot>
       </div>

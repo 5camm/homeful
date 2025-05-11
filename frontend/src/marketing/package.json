@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build marketing"
+    "build": "vitepress build"
   },
   "dependencies": {
     "lib": "file:./../lib",

@@ -16,18 +16,31 @@ module.exports = {
   //   }
   // },
   themeConfig: {
+    aside: false,
     sidebar: [
       {
-        text: 'Welcome Home',
-        link: '/'
+        text: 'About Homeful',
+        collapsed: true,
+        items: [
+          {
+            text: 'Welcome Home',
+            link: '/'
+          }
+        ]
       },
       {
-        text: 'Being Nothing',
-        link: '/being-nothing/'
-      },
-      {
-        text: 'Becoming The Black',
-        link: '/becoming-the-black/'
+        text: 'The Story',
+        collapsed: true,
+        items: [
+          {
+            text: 'Being Nothing',
+            link: '/being-nothing/'
+          },
+          {
+            text: 'Becoming The Black',
+            link: '/becoming-the-black/'
+          }
+        ]
       }
     ]
   }

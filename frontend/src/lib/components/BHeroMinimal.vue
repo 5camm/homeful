@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col items-center justify-center p-8 min-h-screen bg-cover min-w-screen"
+    class="relative flex flex-col items-center justify-center p-8 min-h-screen bg-cover min-w-full"
     :class="[backgroundColor]"
   >
     <div

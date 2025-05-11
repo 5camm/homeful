@@ -2,7 +2,8 @@
   "name": "frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd src/ && yarn start"
+    "start": "cd src/ && yarn start",
+    "deploy": "cd src/ && yarn build && cd marketing && vercel --prod"
   },
   "type": "module",
   "license": "UNLICENSED",

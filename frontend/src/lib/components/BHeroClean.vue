@@ -1,15 +1,15 @@
 <template>
   <div
-    class="flex flex-row flex-reverse items-center justify-around min-h-screen  min-w-screen"
+    class="flex flex-row items-center justify-center min-w-full"
     :class="[backgroundColor]"
   >
     <div
-      class="flex items-center justify-center p-2 mx-auto w-full"
+      class="flex justify-center w-2/3 md:w-3/4 lg:w-2/3"
     >
-      <slot name="media" class="w-full md:w-2/3 lg:w-1/2"> </slot>
+      <slot name="media" class="w-full"> </slot>
     </div>
     <div
-      class="container relative flex flex-col w-full px-5 pb-1 pr-12 mb-16 text-2xl text-gray-700 lg:w-1/2 sm:px-0 md:px-10 sm:items-center lg:items-start lg:mb-0"
+      class="container relative flex flex-col w-full text-2xl text-gray-700 lg:w-3/4 sm:px-0 md:px-10 sm:items-center lg:mb-0"
     >
       <slot name="headline"> </slot>
       <slot name="content"> </slot>

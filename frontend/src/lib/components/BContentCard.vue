@@ -1,12 +1,12 @@
 <template>
   <div
-    class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16"
+    class="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16"
   >
     <div
       :class="[backgroundColor]"
       class="flex flex-col max-w-screen-lg justify-around overflow-hidden rounded-lg shadow-2xl lg:flex-row-reverse sm:mx-auto"
     >
-      <div v-if="image" class="relative p-8 lg:w-1/2">
+      <div v-if="image" class="relative py-1 px-4 lg:w-1/2 lg:px-12">
         <img
           :src="image"
           alt=""
@@ -14,7 +14,7 @@
         />
       </div>
       <div
-        class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-1/2"
+        class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-3/4"
       >
         <div>
           <slot name="title"></slot>

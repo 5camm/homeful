@@ -1,36 +1,37 @@
-<b-hero-clean background="none" :reverse="true">
+<b-hero-clean background="none" :reverse="true" class="flex flex-col items-center justify-center pb-12">
     <template v-slot:headline>
-        <h1 class="relative capitalize text-9xl font-extrabold leading-none text-grey-500 xl:text-10xl sm:text-center lg:text-left"
+        <h1 class="relative text-center capitalize text-9xl font-extrabold leading-none text-grey-500 xl:text-10xl sm:text-center sm:text-left"
         >
-            <span class="cta text-gray-600">Welcome to </span>
-            <span class="text-blue-400 font-mono">Homeful</span>
+            <span class="cta text-gray-600">Welcome To </span>
+            <span class="text-blue-600">Homeful</span>
         </h1>
     </template>
-    <template v-slot:content>
-        <p class="relative block mt-1 italic text-base text-gray-700 xl:text-lg sm:text-center lg:text-left">
-            Unhoused to a full house
-        </p>
-    </template>
     <template v-slot:cta>
-        <button class="cta flex items-center self-start justify-center px-5 py-3 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-purple-500 border border-transparent rounded-full shadow hover:bg-purple-600 focus:outline-none focus:border-purple-600 focus:shadow-outline-purple md:py-4 md:text-lg xl:text-xl md:px-10">Learn More</button>
+        <button class="flex items-center justify-center px-6 py-4 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-purple-500 border border-transparent rounded-full shadow hover:bg-purple-600 focus:outline-none focus:border-purple-600 focus:shadow-outline-purple md:py-4 md:text-lg xl:text-xl md:px-10">Learn More</button>
+    </template>
+    <template #content>
+      <p
+        class="relative text-center z-20 block mt-6 text-base text-gray-700 xl:text-lg md:text-center md:text-left"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </template>
     <template v-slot:media>
-        <img src="https://cdn.discordapp.com/emojis/812497427733938177.webp?size=100" class="object-cover w-full rounded-full mb-10" />
+        <img src="https://cdn.discordapp.com/emojis/812497427733938177.webp?size=100" class="p-6 object-cover w-full rounded-full" />
     </template>
 </b-hero-clean>
-<b-hero-learn background="blue-600" class="learn rounded-lg">
+<b-hero-learn background="blue-700" class="learn rounded-lg">
   <template #headline>
     <h1
       class="relative z-20 font-sans text-4xl font-extrabold leading-none capitalize text-black sm:text-5xl xl:text-6xl sm:text-center lg:text-left"
     >
       <span class="relative">
         <span
-          class="absolute bottom-0 left-0 inline-block w-full h-4 mb-1 -ml-1 transform -skew-x-3 bg-yellow-100"
+          class="absolute bottom-0 left-0 inline-block w-full h-4 mb-1 -ml-1 transform -skew-x-3 bg-yellow-300"
         ></span>
-        <span class="relative">Lorem Ipsum,</span>
+        <span class="relative">Unhoused,</span>
       </span>
       <span class="relative block text-yellow-400"
-        >Dolor Sit.</span
+        >to homeful</span
       >
     </h1>
   </template>
@@ -40,20 +41,19 @@
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      aliqua.
     </p>
   </template>
   <template #cta>
     <button
       class="flex items-center self-start justify-center px-5 py-3 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-yellow-500 border border-transparent rounded-lg shadow hover:bg-yellow-600 focus:outline-none focus:border-yellow-600 focus:shadow-outline-yellow md:py-4 md:text-lg xl:text-xl md:px-10"
     >
-      Support Now
+      Join Homeful
     </button>
     <button
       class="relative flex inline-block h-full ml-5 text-base text-lg font-medium leading-tight text-gray-400 underline transition duration-150 ease-in-out border-transparent"
     >
-      Try for Free
+      Completely for Free
     </button>
   </template>
   <template #media>
@@ -75,22 +75,19 @@
   </template>
   <template v-slot:heading>
     <h2
-      class="text-4xl font-bold text-gray-900 mt-5 leading-tight"
+      class="text-4xl font-bold text-gray-900 mt-1 leading-tight"
     >
-      Dolor Sit Amet
+      Dolor Sit
     </h2>
   </template>
   <template v-slot:description>
     <p class="text-gray-600 text-base m-3">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing.
     </p>
   </template>
   <template v-slot:cta>
     <button
-      class="underline font-medium flex items-center inline-block text-indigo-500 mt-8"
+      class="underline font-medium flex justify-center text-indigo-500"
     >
       <span>View All Features</span>
       <svg
@@ -110,28 +107,25 @@
     </button>
   </template>
 </b-content-browser>
-<b-hero-culture background="pink-500">
+<b-hero-culture background="blue-300" class="rounded-lg">
   <template #headline>
     <h2
-      class="text-5xl text-white font-extrabold relative z-20 leading-tight"
+      class="text-5xl text-white font-extrabold relative leading-tight"
     >
       Lorem ipsum<br />
       dolor sit amet
     </h2>
   </template>
   <template #content>
-    <p class="text-xl mt-4 text-gray-200">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p class="text-xl mt-1 text-gray-900">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
   </template>
   <template #cta>
     <button
       class="flex items-center justify-center self-start px-5 py-3 border border-transparent text-xs leading-tight font-medium rounded-lg shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-base md:px-8 mt-5"
     >
-      Supports Us
+      Find Support
     </button>
     <button
       class="flex items-center justify-center self-start px-5 py-3 border-transparent text-xs leading-tight font-medium rounded-lg shadow text-indigo-500 bg-gray-200 hover:bg-white focus:outline-none focus:border-gray-100 focus:shadow-outline-gray transition duration-150 ease-in-out md:py-4 md:text-base md:px-8 mt-5 ml-5"
@@ -140,15 +134,15 @@
     </button>
   </template>
   <template #media>
-    <figure class="p-8">
+    <figure class="flex justify-center items-end h-full mt-6">
       <img
         src="https://cdn.discordapp.com/emojis/804518252323667968.webp?size=100"
-        class=" w-full object-cover rounded-lg"
+        class=" w-64 bg-white object-cover rounded-full"
       />
     </figure>
   </template>
 </b-hero-culture>
-<b-hero-clean background="none">
+<b-hero-clean background="none" class="p-6 lg:p-16">
   <template #headline>
     <h1
       class="capitalize text-5xl font-extrabold leading-none text-purple-500 xl:text-6xl sm:text-center lg:text-left"
@@ -163,36 +157,37 @@
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      aliqua. Ut enim ad minim veniam 
     </p>
   </template>
   <template #media>
-    <div
-      class="absolute flex items-center justify-center w-full h-full"
-    >
-      <span
-        class="flex items-center justify-center w-20 h-20 bg-purple-500 rounded-full shadow-2xl"
+    <figure class="relative w-full h-full">
+      <div
+        class="absolute flex items-center justify-center w-full h-full"
       >
-        <svg
-          class="w-auto h-8 ml-1 text-white fill-current"
-          viewBox="0 0 52 66"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          class="flex items-center justify-center w-20 h-20 bg-purple-500 rounded-full shadow-2xl"
         >
-          <path
-            d="M50 30.7L4.1.6C2.6-.4.8.9.8 2.9v60.3c0 2 1.8 3.3 3.3 2.3L50 35.3c1.5-1 1.5-3.6 0-4.6z"
-            fill-rule="nonzero"
-          />
-        </svg>
-      </span>
-    </div>
-    <img
-      src="https://cdn.discordapp.com/emojis/812478802898452521.webp?size=100"
-      class="rounded-lg object-cover w-full my-10"
-    />
+          <svg
+            class="w-auto h-8 ml-1 text-white fill-current"
+            viewBox="0 0 52 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M50 30.7L4.1.6C2.6-.4.8.9.8 2.9v60.3c0 2 1.8 3.3 3.3 2.3L50 35.3c1.5-1 1.5-3.6 0-4.6z"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        src="https://cdn.discordapp.com/emojis/812478802898452521.webp?size=100"
+        class="rounded-lg object-cover w-2/3 lg:w-full"
+      />
+    </figure>
   </template>
 </b-hero-clean>
-<b-content-card class="card text-white" background="green-700" image="https://cdn.discordapp.com/emojis/812478803091259392.webp?size=100">
+<b-content-card class="card text-white" background="green-600" image="https://cdn.discordapp.com/emojis/812478803091259392.webp?size=100">
   <template v-slot:title>
     <p
       class="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200"
@@ -212,20 +207,19 @@
       <span class="font-bold">Lorem ipsum </span>
       dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim
-      ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat.
+      ad minim veniam
     </p>
   </template>
   <template v-slot:cta>
     <button
-      class="inline-flex items-center justify-center h-12 px-6 py-3 mr-6 font-sm text-white transition duration-200 rounded-lg bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+      class="inline-flex items-center justify-center px-6 py-3 mr-6 font-sm text-white transition duration-200 rounded-lg bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none lg:text-lg lg:py-4"
     >
-      Get started
+      Find Home
     </button>
     <button
-      class="inline-flex text-lg underline items-center transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+      class="inline-flex text-sm underline items-center transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 xl:text-lg"
     >
-      Learn More
+      Learn How Now
       <svg
         class="inline-block w-2 ml-2"
         fill="currentColor"
@@ -272,7 +266,7 @@
     </div>
   </template>
 </b-hero-minimal>
-<b-content-course background="purple-900" class="rounded-lg">
+<b-content-course background="indigo-500" class="rounded-lg">
   <template #title>
     <p
       class="inline-block px-3 py-1 leading-tight mb-4 text-xs font-semibold tracking-widest text-indigo-700 uppercase rounded-full bg-indigo-200"
@@ -307,17 +301,17 @@
   <template #cards>
     <div
       v-for="course of ['','','']"
-      class="flex flex-col w-2/3 justify-center rounded-lg p-8 sm:p-2 sm:w-1/2 md:w-1/3"
+      class="flex flex-col w-2/3 p-8 sm:p-2 sm:w-1/2 md:w-1/3"
     >
-      <div class="flex flex-col items-end bg-gray-900">
+      <div class="flex flex-col items-end w-full h-32 bg-pink-700 p-4">
         <img
-          class="w-full h-full p-8 w-64 flex-shrink object-cover self-end bg-pink-500"
+          class="w-full object-cover"
           src="https://cdn.discordapp.com/emojis/804519063253811290.webp?size=100"
         />
       </div>
       <div class="relative flex flex-col justify-between flex-1 text-white p-3 bg-black">
         <span
-          class="absolute -mt-12 inline-flex items-center px-3 py-1 mr-4 text-xs font-medium leading-tight text-gray-800 bg-gray-100 border rounded-full"
+          class="absolute -mt-5 inline-flex items-center px-3 py-1 mr-4 text-xs font-medium leading-tight text-gray-800 bg-gray-100 border rounded-full"
           >Lorem ipsum dolor</span
         >
         <p
@@ -335,14 +329,14 @@
           >
         </p>
       </div>
-      <div class="flex items-center p-6 bg-gray-100">
+      <div class="flex items-center p-2 bg-gray-100">
         <div class="flex-shrink-0">
           <img
-            class="w-16 h-60 rounded-full"
+            class="w-12 rounded-full bg-pink-500"
             src="https://cdn.discordapp.com/emojis/804518252323667968.webp?size=100"
           />
         </div>
-        <div class="ml-3 p-1">
+        <div class="ml-2 p-1">
           <p class="text-sm font-medium leading-5 text-gray-900">
             <a class="hover:underline">don</a>
           </p>
@@ -356,7 +350,7 @@
 </b-content-course>
 
 <style>
-.cta {
-  text-wrap: nowrap;
+.heading {
+  flex-direction: column;
 }
 </style>

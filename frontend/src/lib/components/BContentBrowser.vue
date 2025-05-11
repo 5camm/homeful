@@ -1,13 +1,13 @@
 <template>
   <div
-    class="px-8 mx-auto flex items-center min-h-screen min-w-screen bg-none"
+    class="flex flex-col items-center justify-center min-w-full min-h-screen p-2 lg:p-10 lg:flex-row"
   >
-    <div class="w-full md:w-1/2">
+    <div class="w-3/4 py-8 lg:py-2">
       <div
-        class="flex flex-col overflow-hidden shadow-2xl rounded-lg"
+        class="flex flex-col h-64 overflow-hidden shadow-2xl rounded"
       >
         <div
-          class="h-8 p-6 bg-gray-900 text-white flex items-center"
+          class="h-8 p-4 bg-gray-900 text-white flex items-center"
         >
           <div
             class="w-3 h-3 rounded-full ml-3 bg-red-400"
@@ -22,7 +22,7 @@
         <img :src="image" class="w-full h-full object-cover" />
       </div>
     </div>
-    <div class="relative p-3 w-1/2 h-full pl-12 md:w-full">
+    <div class="relative text-center p-2 w-full h-full lg:w-3/4 lg:p-8 lg:text-left">
       <slot name="title"></slot>
       <slot name="heading"></slot>
       <slot name="description"></slot>
