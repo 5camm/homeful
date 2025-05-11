@@ -2,7 +2,7 @@
   <div
     class="px-8 mx-auto flex items-center min-h-screen min-w-screen bg-none"
   >
-    <div class="w-1/2">
+    <div class="w-full md:w-1/2">
       <div
         class="flex flex-col overflow-hidden shadow-2xl rounded-lg"
       >
@@ -22,7 +22,7 @@
         <img :src="image" class="w-full h-full object-cover" />
       </div>
     </div>
-    <div class="relative w-1/2 h-full pl-12">
+    <div class="relative p-3 w-1/2 h-full pl-12 md:w-full">
       <slot name="title"></slot>
       <slot name="heading"></slot>
       <slot name="description"></slot>

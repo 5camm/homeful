@@ -4,7 +4,7 @@
     :class="[backgroundColor]"
   >
     <div
-      class="flex flex-col flex-col-reverse items-center justify-center mx-auto lg:flex-row lg:max-w-4xl lg:p-0"
+      class="flex flex-col flex-col-reverse items-center justify-center mx-auto lg:flex-row-reverse lg:max-w-4xl lg:p-0"
     >
       <div
         class="container relative flex flex-col w-full px-5 pr-12 mb-16 text-2xl text-gray-700 lg:w-1/2 sm:px-0 md:px-10 sm:items-center lg:items-start lg:mb-0"

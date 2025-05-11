@@ -4,23 +4,14 @@
   >
     <div
       :class="[backgroundColor]"
-      class="flex flex-col max-w-screen-lg overflow-hidden border rounded-lg shadow-xl lg:flex-row sm:mx-auto"
+      class="flex flex-col max-w-screen-lg justify-around overflow-hidden rounded-lg shadow-2xl lg:flex-row-reverse sm:mx-auto"
     >
-      <div v-if="image" class="relative lg:w-1/2">
+      <div v-if="image" class="relative p-8 lg:w-1/2">
         <img
           :src="image"
           alt=""
-          class="object-contain w-full lg:absolute h-80 lg:h-full"
+          class="object-contain w-full h-full"
         />
-        <svg
-          class="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
-          viewBox="0 0 20 104"
-          fill="currentColor"
-        >
-          <polygon
-            points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"
-          ></polygon>
-        </svg>
       </div>
       <div
         class="flex flex-col justify-center p-8 lg:p-16 lg:pl-10 lg:w-1/2"

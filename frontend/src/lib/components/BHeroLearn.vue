@@ -1,10 +1,10 @@
 <template>
   <div
-    class="relative flex flex-col items-center justify-center min-h-screen bg-white bg-cover min-w-screen"
+    class="relative flex flex-col items-center justify-center min-h-screen bg-cover min-w-screen"
     :class="[backgroundColor]"
   >
     <div
-      class="flex flex-col flex-col-reverse items-center justify-center p-10 mx-auto lg:flex-row lg:max-w-6xl lg:p-0"
+      class="flex flex-col flex-reverse items-center justify-center p-10 mx-auto lg:flex-row lg:max-w-6xl lg:p-0"
     >
       <div
         class="relative w-full rounded-lg cursor-pointer md:px-6 md:w-2/3 lg:w-1/2 group"

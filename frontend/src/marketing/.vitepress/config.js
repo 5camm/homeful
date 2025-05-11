@@ -16,7 +16,6 @@ module.exports = {
   //   }
   // },
   themeConfig: {
-    docsDir: 'docs',
     sidebar: [
       {
         text: 'Welcome Home',

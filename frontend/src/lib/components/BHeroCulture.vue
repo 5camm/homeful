@@ -1,15 +1,13 @@
 <template>
   <div
-    class="min-w-screen min-h-screen px-4 flex items-center justify-center bg-none bg-cover relative flex-col"
+    class="min-w-screen rounded-lg"
+    :class="[backgroundColor]"
   >
     <div
-      class="w-full h-full absolute inset-0 bg-black bg-opacity-75"
-    ></div>
-    <div
-      class="flex flex-col-reverse md:flex-row max-w-6xl mx-auto"
+      class="flex flex-row items-center w-full lg:flex-col-reverse lg:text-center"
     >
       <div
-        class="w-full container text-white text-2xl font-hairline relative pb-1 flex flex-col pr-12 md:w-1/2"
+        class="w-1/2 text-white text-2xl font-hairline relative flex flex-col p-12"
       >
         <slot name="headline"></slot>
         <slot name="content"></slot>
@@ -18,9 +16,9 @@
         </div>
       </div>
       <div
-        class="w-full h-64 relative rounded-lg overflow-hidden shadow-2xl cursor-pointer md:w-1/2 md:h-auto md:p-0"
+        class="w-2/3 mt-6"
       >
-        <slot name="media"></slot>
+        <slot name="media" class="shadow-2xl rounded-lg"></slot>
       </div>
     </div>
   </div>
@@ -34,17 +32,16 @@ export default {
   props: {
     background: {
       type: String,
-      default:
-        'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80'
+      default: 'none'
     }
   },
   setup(props) {
-    const backgroundImage = computed(
-      () => `background-image: url('${props.background}')`
+    const backgroundColor = computed(
+      () => `bg-${props.background}`
     )
 
     return {
-      backgroundImage
+      backgroundColor
     }
   }
 }

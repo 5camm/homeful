@@ -1140,7 +1140,7 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-"lib@file:../lib":
+"lib@file:./../lib":
   version "0.1.0"
   dependencies:
     core-js "^3.42.0"
