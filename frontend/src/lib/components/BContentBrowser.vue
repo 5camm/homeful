@@ -2,7 +2,7 @@
   <div
     class="flex flex-col items-center justify-center min-w-full min-h-screen p-2 lg:p-10 lg:flex-row"
   >
-    <div class="w-3/4 py-8 lg:py-2">
+    <div class="w-full py-8 lg:py-2">
       <div
         class="flex flex-col h-64 overflow-hidden shadow-2xl rounded"
       >

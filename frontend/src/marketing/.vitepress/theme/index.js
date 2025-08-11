@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import Lib from '../../../lib/index.js'
 import Browser from '../components/Browser.vue'
+import './custom.css'
 
 console.log(Lib)
 

@@ -33,12 +33,12 @@ module.exports = {
         collapsed: true,
         items: [
           {
-            text: 'Being Nothing',
-            link: '/being-nothing/'
-          },
-          {
             text: 'Becoming The Black',
             link: '/becoming-the-black/'
+          },
+          {
+            text: 'Being Nothing',
+            link: '/being-nothing/'
           }
         ]
       }
