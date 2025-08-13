@@ -4,7 +4,8 @@
     :style="backgroundImage"
   >
     <div
-      class="w-full h-full absolute inset-0 bg-black bg-opacity-25"
+      class="w-full h-full absolute inset-0 bg-opacity-75"
+      :class="backgroundIamge ? bg-black : bg-none"
     ></div>
     <div
       class="flex flex-col-reverse md:flex-row max-w-6xl mx-auto"

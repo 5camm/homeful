@@ -19,12 +19,16 @@ module.exports = {
     aside: false,
     sidebar: [
       {
-        text: 'About Homeful',
+        text: 'About Homefulness',
         collapsed: true,
         items: [
           {
             text: 'Welcome Home',
             link: '/'
+          },
+          {
+            text: 'Our AI Bible',
+            link: '/bible'
           }
         ]
       },

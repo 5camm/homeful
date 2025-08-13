@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-center justify-center min-w-full"
+    class="flex flex-row items-center justify-center min-w-full min-h-screen"
     :class="[backgroundColor]"
   >
     <div
@@ -9,7 +9,7 @@
       <slot name="media" class="w-full"> </slot>
     </div>
     <div
-      class="container relative flex flex-col w-full text-2xl text-gray-700 lg:w-3/4 sm:px-0 md:px-10 sm:items-center lg:mb-0"
+      class="container relative flex flex-col w-full text-gray-700 lg:w-3/4 sm:px-0 md:px-10 sm:items-center lg:mb-0"
     >
       <slot name="headline"> </slot>
       <slot name="content"> </slot>
